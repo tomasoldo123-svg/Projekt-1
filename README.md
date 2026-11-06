@@ -41,12 +41,16 @@ python3 -m http.server 8000
 Stranica je čisti HTML/CSS/JS – može se postaviti na bilo koji hosting
 (npr. postojeći hosting za parket-art.hr, Netlify, GitHub Pages).
 
-## Animacije
+## Dizajn i animacije
 
-- **Hero**: parket (riblja kost) se pri učitavanju slaže dasku po dasku (canvas), uz svjetlo koje prati miš.
+Vizualni jezik dolazi iz parketarskog zanata: siva podloga od estriha, grafit, hrast
+i plava kredna linija kojom se prije slaganja riblje kosti odredi os.
+
+- **Hero**: kredna linija "pukne", a zatim se parket (riblja kost, 70 × 490 mm) slaže od nje prema van.
   Ako dodate `img/hero.jpg`, umjesto animacije prikazuje se fotografija.
-- **Prije / poslije**: klizač u sekciji "Obnova". Prave fotografije: `img/prije.jpg` i `img/poslije.jpg`
-  (iste dimenzije i kadar).
-- Teksture materijala (parket, mikrocement, epoksid, vinil) generiraju se u pregledniku dok nema fotografija.
-- Otkrivanje sekcija vezano je uz skrol (CSS scroll-driven animations, s rezervom za starije preglednike).
+- **Slogovi**: vodoravni prikaz slogova vezan uz skrol. Prave fotografije:
+  `img/slog-riblja-kost.jpg`, `slog-francuska.jpg`, `slog-brodski.jpg`, `slog-pleter.jpg`, `slog-mikrocement.jpg`.
+- **Izbrusite ga sami**: posjetitelj sam brusi stari pod mišem ili prstom; na 80 % se nanosi lak.
+  Prave fotografije: `img/prije.jpg` i `img/poslije.jpg` (isti kadar).
+- **Usluge**: pregled materijala prati pokazivač (računalo).
 - Sve animacije poštuju postavku sustava "smanji pokrete" (prefers-reduced-motion).
