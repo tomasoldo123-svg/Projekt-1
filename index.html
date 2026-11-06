@@ -2,13 +2,13 @@
 <html lang="hr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Parket Art | Parket, mikrocement i epoksidni podovi – Zagreb i okolica</title>
   <meta name="description" content="Parket Art – postavljanje, brušenje i lakiranje parketa, mikrocement, epoksidni i poliuretanski podovi te LVT vinil. Zagreb, Sesvete i Zagrebačka županija. Besplatna procjena!">
   <meta name="keywords" content="parket Zagreb, postavljanje parketa, brušenje parketa, lakiranje parketa, mikrocement, epoksidni pod, poliuretanski pod, LVT vinil, Sesvete, parketar">
+  <meta name="theme-color" content="#1c1712">
   <link rel="canonical" href="https://parket-art.hr/">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Parket Art – Podovi koji traju generacijama">
   <meta property="og:description" content="Parket, mikrocement, epoksidni podovi i LVT vinil. Zagreb i Zagrebačka županija. Zatražite besplatnu procjenu.">
@@ -20,10 +20,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Strukturirani podaci za Google (lokalni biznis) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,12 +34,7 @@
     "foundingDate": "2019",
     "telephone": "+385000000000",
     "email": "info@parket-art.hr",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Sesvete",
-      "addressRegion": "Grad Zagreb",
-      "addressCountry": "HR"
-    },
+    "address": { "@type": "PostalAddress", "addressLocality": "Sesvete", "addressRegion": "Grad Zagreb", "addressCountry": "HR" },
     "areaServed": ["Grad Zagreb", "Zagrebačka županija"],
     "openingHours": "Mo-Fr 07:00-17:00, Sa 08:00-13:00"
   }
@@ -48,27 +42,44 @@
 </head>
 <body>
 
+<!-- Ikone -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.5l1.6 4.2-2.2 1.4a11 11 0 0 0 6.5 6.5l1.4-2.2L20 15.5V19a1.6 1.6 0 0 1-1.7 1.6A16.5 16.5 0 0 1 3.4 5.7 1.6 1.6 0 0 1 5 4z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3c.6 4.4 2.6 6.4 7 7-4.4.6-6.4 2.6-7 7-.6-4.4-2.6-6.4-7-7 4.4-.6 6.4-2.6 7-7z"/><path d="M19 16c.2 1.4.8 2 2 2.2-1.2.2-1.8.8-2 2.2-.2-1.4-.8-2-2-2.2 1.2-.2 1.8-.8 2-2.2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-drag" viewBox="0 0 24 24"><path d="M9 6 3 12l6 6M15 6l6 6-6 6"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></symbol>
+</svg>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
 <!-- ============ HEADER ============ -->
 <header class="header" id="header">
   <div class="container header__inner">
     <a href="#pocetna" class="logo" aria-label="Parket Art – početna">
-      <span class="logo__mark" aria-hidden="true">
-        <svg viewBox="0 0 40 40"><path d="M6 25 20 11l14 14-4.5 4.5L20 20l-9.5 9.5z"/></svg>
-      </span>
+      <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M6 25 20 11l14 14-4.5 4.5L20 20l-9.5 9.5z"/></svg></span>
       <span class="logo__text">PARKET<strong>ART</strong></span>
     </a>
 
     <nav class="nav" id="nav" aria-label="Glavna navigacija">
       <a href="#usluge">Usluge</a>
+      <a href="#obnova">Obnova</a>
       <a href="#o-nama">O nama</a>
-      <a href="#proces">Kako radimo</a>
+      <a href="#proces">Proces</a>
       <a href="#galerija">Galerija</a>
       <a href="#pitanja">Pitanja</a>
       <a href="#kontakt" class="btn btn--sm btn--gold nav__cta">Besplatna procjena</a>
     </nav>
 
     <a href="tel:+385000000000" class="header__phone" data-phone>
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
+      <svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>
       <span data-phone-text>+385 XX XXX XXXX</span>
     </a>
 
@@ -82,55 +93,78 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="pocetna">
-  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__bg" id="hero-bg" aria-hidden="true">
+    <canvas class="hero__canvas" id="hero-canvas"></canvas>
+    <div class="hero__photo"></div>
+    <div class="hero__shade"></div>
+    <div class="hero__sheen"></div>
+  </div>
+  <div class="hero__glow" id="hero-glow" aria-hidden="true"></div>
+
   <div class="container hero__inner">
-    <div class="hero__content reveal">
-      <p class="eyebrow">Zagreb · Sesvete · Zagrebačka županija</p>
-      <h1>Podovi koji <em>traju generacijama</em></h1>
-      <p class="hero__lead">
-        Postavljanje i obnova parketa, mikrocement, epoksidni podovi i LVT vinil –
-        izvedeni precizno, čisto i u dogovorenom roku. Više od 10 godina iskustva u svakom kvadratu.
+    <div class="hero__content">
+      <p class="eyebrow a-up" style="--d:.1s">Zagreb · Sesvete · Zagrebačka županija</p>
+      <h1 class="hero__title">
+        <span class="m"><span class="w" style="--i:0">Podovi</span></span>
+        <span class="m"><span class="w" style="--i:1">koji</span></span>
+        <em><span class="m"><span class="w" style="--i:2">traju</span></span>
+        <span class="u"><span class="m"><span class="w" style="--i:3">generacijama</span></span><svg class="swash" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M3 17C55 7 120 4 180 9s95 9 117-2"/></svg></span></em>
+      </h1>
+      <p class="hero__lead a-up" style="--d:.7s">
+        Postavljanje i obnova parketa, mikrocement, epoksidni podovi i LVT vinil.
+        Precizno, čisto i u dogovorenom roku, uz više od 10 godina iskustva.
       </p>
-      <div class="hero__actions">
-        <a href="#kontakt" class="btn btn--gold btn--lg">Zatražite besplatnu procjenu</a>
-        <a href="#galerija" class="btn btn--ghost btn--lg">Pogledajte radove</a>
+      <div class="hero__actions a-up" style="--d:.85s">
+        <a href="#kontakt" class="btn btn--gold btn--lg btn--magnetic">Zatražite besplatnu procjenu <svg class="i i--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="#obnova" class="btn btn--ghost btn--lg btn--magnetic">Prije i poslije</a>
       </div>
-      <ul class="hero__trust">
-        <li><span class="check">✓</span> Besplatan izlazak i procjena</li>
-        <li><span class="check">✓</span> Brušenje bez prašine</li>
-        <li><span class="check">✓</span> Garancija na radove</li>
+      <ul class="hero__trust a-up" style="--d:1s">
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Besplatan izlazak i procjena</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Brušenje uz usis prašine</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Garancija na radove</li>
       </ul>
     </div>
 
-    <aside class="hero__card reveal" aria-label="Brzi upit">
+    <aside class="hero__card a-left" style="--d:.75s" aria-label="Brzi upit">
       <h2>Brzi upit</h2>
       <p>Javite nam se i dobit ćete ponudu u roku od 24 sata.</p>
       <a href="tel:+385000000000" class="hero__card-row" data-phone>
-        <span class="icon-circle">☎</span>
+        <span class="icon-circle"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span>
         <span><small>Nazovite</small><strong data-phone-text>+385 XX XXX XXXX</strong></span>
+        <svg class="i i--arrow row-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
       </a>
       <a href="#" class="hero__card-row" data-whatsapp target="_blank" rel="noopener">
-        <span class="icon-circle icon-circle--wa">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>
-        </span>
-        <span><small>Pošaljite fotografije</small><strong>WhatsApp / Viber</strong></span>
+        <span class="icon-circle icon-circle--wa"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg></span>
+        <span><small>Pošaljite fotografije prostora</small><strong>WhatsApp / Viber</strong></span>
+        <svg class="i i--arrow row-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
       </a>
       <a href="mailto:info@parket-art.hr" class="hero__card-row" data-email>
-        <span class="icon-circle">✉</span>
+        <span class="icon-circle"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span>
         <span><small>E-mail</small><strong data-email-text>info@parket-art.hr</strong></span>
+        <svg class="i i--arrow row-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
       </a>
     </aside>
   </div>
 
   <div class="container">
-    <div class="stats reveal">
-      <div class="stat"><strong data-count="10">0</strong><span>+ godina iskustva</span></div>
-      <div class="stat"><strong data-count="2019">0</strong><span>registriran obrt</span></div>
-      <div class="stat"><strong data-count="5">0</strong><span>vrsta podnih sustava</span></div>
-      <div class="stat"><strong data-count="24">0</strong><span>h do ponude</span></div>
+    <div class="stats">
+      <div class="stat a-up" style="--d:1.1s"><strong><span data-count="10">10</span>+</strong><span>godina iskustva</span></div>
+      <div class="stat a-up" style="--d:1.2s"><strong><span data-count="2019">2019</span></strong><span>registriran obrt</span></div>
+      <div class="stat a-up" style="--d:1.3s"><strong><span data-count="5">5</span></strong><span>vrsta podnih sustava</span></div>
+      <div class="stat a-up" style="--d:1.4s"><strong><span data-count="24">24</span> h</strong><span>do ponude</span></div>
     </div>
   </div>
+
+  <a href="#usluge" class="scroll-cue" aria-label="Pomaknite se na usluge"><span></span>Skrolajte</a>
 </section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marquee">
+    <span>Riblja kost</span><span>Francuska riblja kost</span><span>Brodski pod</span><span>Mikrocement</span><span>Epoksid</span><span>Poliuretan</span><span>LVT vinil</span><span>Brušenje</span><span>Lakiranje</span><span>Uljenje</span>
+    <span>Riblja kost</span><span>Francuska riblja kost</span><span>Brodski pod</span><span>Mikrocement</span><span>Epoksid</span><span>Poliuretan</span><span>LVT vinil</span><span>Brušenje</span><span>Lakiranje</span><span>Uljenje</span>
+  </div>
+</div>
 
 <!-- ============ USLUGE ============ -->
 <section class="section" id="usluge">
@@ -138,51 +172,54 @@
     <header class="section__head reveal">
       <p class="eyebrow">Naše usluge</p>
       <h2>Kompletna rješenja za vaš pod</h2>
-      <p>Od klasičnog drvenog parketa do modernih bešavnih podova – savjetujemo, isporučujemo i izvodimo.</p>
+      <p>Od klasičnog drvenog parketa do modernih bešavnih podova. Savjetujemo, isporučujemo i izvodimo.</p>
     </header>
 
     <div class="services">
-      <article class="service reveal">
-        <div class="service__visual pattern-herringbone" aria-hidden="true"></div>
+      <article class="service reveal" data-tilt>
+        <div class="service__visual"><div class="tex" data-tex="herringbone" data-seed="3"></div></div>
         <div class="service__body">
           <h3>Postavljanje parketa</h3>
-          <p>Masivni i višeslojni parket, riblja kost, francuska riblja kost, brodski pod i klasični slogovi. Priprema podloge, ljepljenje ili plivajuća montaža.</p>
+          <p>Masivni i višeslojni parket: riblja kost, francuska riblja kost, brodski pod i klasični slogovi. Ljepljenje ili plivajuća montaža.</p>
           <ul class="ticks">
             <li>Hrast, jasen, orah i egzotične vrste</li>
-            <li>Mjerenje vlage i izravnavanje podloge</li>
+            <li>CM mjerenje vlage i izravnavanje podloge</li>
             <li>Lajsne i završne obrade</li>
           </ul>
+          <a href="#kontakt" class="service__link" data-service="Postavljanje parketa">Zatražite ponudu <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
-      <article class="service reveal">
-        <div class="service__visual pattern-planks" aria-hidden="true"></div>
+      <article class="service reveal" data-stagger="1" data-tilt>
+        <div class="service__visual"><div class="tex" data-tex="split" data-seed="8"></div><span class="service__chip">Prije → poslije</span></div>
         <div class="service__body">
           <h3>Brušenje i lakiranje</h3>
-          <p>Vratite starom parketu sjaj novoga. Brušenje strojevima s usisom, kitanje fuga, lakiranje, uljenje ili voskanje po vašem izboru.</p>
+          <p>Vratite starom parketu sjaj novoga. Brušenje strojevima s usisom, kitanje fuga, lakiranje, uljenje ili voskanje.</p>
           <ul class="ticks">
-            <li>Brušenje gotovo bez prašine</li>
+            <li>Brušenje u tri prolaza: P36 → P60 → P120</li>
             <li>Mat, polumat ili sjajni lak</li>
             <li>Bajcanje i promjena tona drva</li>
           </ul>
+          <a href="#kontakt" class="service__link" data-service="Brušenje i lakiranje">Zatražite ponudu <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
-      <article class="service reveal">
-        <div class="service__visual pattern-microcement" aria-hidden="true"></div>
+      <article class="service reveal" data-stagger="2" data-tilt>
+        <div class="service__visual"><div class="tex" data-tex="microcement" data-seed="5"></div></div>
         <div class="service__body">
           <h3>Mikrocement</h3>
-          <p>Bešavni dekorativni premazi za podove, zidove, kupaonice i stepenice – moderan industrijski izgled. Radimo s provjerenim CEMHER sustavima.</p>
+          <p>Bešavni dekorativni premaz za podove, zidove, kupaonice i stepenice. Radimo s provjerenim CEMHER sustavima.</p>
           <ul class="ticks">
-            <li>Bez fuga, lako održavanje</li>
+            <li>Debljina sloja svega 2–3 mm</li>
             <li>Nanošenje preko postojećih pločica</li>
             <li>Vodootporna završna zaštita</li>
           </ul>
+          <a href="#kontakt" class="service__link" data-service="Mikrocement">Zatražite ponudu <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
-      <article class="service reveal">
-        <div class="service__visual pattern-epoxy" aria-hidden="true"></div>
+      <article class="service reveal" data-tilt>
+        <div class="service__visual"><div class="tex" data-tex="epoxy" data-seed="9"></div></div>
         <div class="service__body">
           <h3>Epoksidni i poliuretanski podovi</h3>
           <p>Izdržljivi, higijenski i otporni podovi za garaže, radionice, skladišta, poslovne prostore i moderne domove.</p>
@@ -191,72 +228,105 @@
             <li>Protuklizne izvedbe</li>
             <li>Jednobojni ili dekorativni (flakes)</li>
           </ul>
+          <a href="#kontakt" class="service__link" data-service="Epoksidni / poliuretanski pod">Zatražite ponudu <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
-      <article class="service reveal">
-        <div class="service__visual pattern-vinyl" aria-hidden="true"></div>
+      <article class="service reveal" data-stagger="1" data-tilt>
+        <div class="service__visual"><div class="tex" data-tex="vinyl" data-seed="4"></div></div>
         <div class="service__body">
           <h3>LVT vinil podovi</h3>
-          <p>Vodootporni i tihi vinil s vjernim izgledom drva ili kamena. Idealan za kuhinje, kupaonice, apartmane i poslovne prostore.</p>
+          <p>Vodootporan i tih vinil s vjernim izgledom drva ili kamena. Idealan za kuhinje, kupaonice, apartmane i urede.</p>
           <ul class="ticks">
             <li>Click i ljepljive izvedbe</li>
             <li>Pogodan za podno grijanje</li>
-            <li>Brza montaža</li>
+            <li>Brza montaža, odmah spreman za korištenje</li>
           </ul>
+          <a href="#kontakt" class="service__link" data-service="LVT vinil">Zatražite ponudu <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
-      <article class="service service--cta reveal">
+      <article class="service service--cta reveal" data-stagger="2">
         <div class="service__body">
           <h3>Niste sigurni što odabrati?</h3>
-          <p>Dođemo na lokaciju, izmjerimo prostor i vlagu podloge te predložimo rješenje koje odgovara vašem prostoru, stilu i budžetu.</p>
-          <a href="#kontakt" class="btn btn--gold">Dogovorite besplatan izlazak</a>
+          <p>Dođemo na lokaciju, izmjerimo prostor i vlagu podloge te predložimo rješenje za vaš prostor, stil i budžet.</p>
+          <a href="#kontakt" class="btn btn--gold btn--magnetic" data-service="Nisam siguran/na – trebam savjet">Dogovorite besplatan izlazak <svg class="i i--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ============ ZAŠTO MI ============ -->
+<!-- ============ PRIJE / POSLIJE ============ -->
+<section class="section section--alt" id="obnova">
+  <div class="container renew">
+    <div class="renew__text reveal">
+      <p class="eyebrow">Obnova parketa</p>
+      <h2>Stari parket, novi sjaj</h2>
+      <p>Istrošen, siv i izgreban parket ne treba mijenjati. Brušenjem i novim lakom vraćamo mu boju, zaštitu i sjaj, za djelić cijene novog poda.</p>
+      <ol class="renew__steps">
+        <li><strong>Brušenje u tri prolaza</strong><span>Granulacija P36 → P60 → P120 skida stari lak i ogrebotine.</span></li>
+        <li><strong>Kitanje fuga</strong><span>Masa od vlastite piljevine u tonu vašeg drva.</span></li>
+        <li><strong>2–3 sloja laka ili ulja</strong><span>Hodanje nakon 24 h, puno opterećenje nakon 7 dana.</span></li>
+      </ol>
+      <a href="#kontakt" class="btn btn--dark btn--magnetic" data-service="Brušenje i lakiranje">Zatražite procjenu obnove <svg class="i i--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="renew__visual reveal" data-stagger="1">
+      <div class="ba" id="ba">
+        <div class="ba__layer"><div class="tex" data-tex="after" data-seed="21"></div></div>
+        <div class="ba__layer ba__layer--before"><div class="tex" data-tex="before" data-seed="21"></div></div>
+        <span class="ba__tag ba__tag--before">Prije</span>
+        <span class="ba__tag ba__tag--after">Poslije</span>
+        <div class="ba__line"></div>
+        <div class="ba__knob"><svg class="i" aria-hidden="true"><use href="#i-drag"/></svg></div>
+        <label class="sr-only" for="ba-range">Usporedba prije i poslije obnove</label>
+        <input class="ba__range" type="range" id="ba-range" min="0" max="100" value="50">
+      </div>
+      <p class="ba__hint">Povucite klizač i usporedite.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O NAMA ============ -->
 <section class="section section--dark" id="o-nama">
   <div class="container about">
-    <div class="about__visual reveal" aria-hidden="true">
-      <div class="about__img pattern-herringbone pattern-herringbone--large"></div>
+    <div class="about__visual reveal">
+      <div class="about__img"><div class="about__parallax" id="about-parallax"><div class="tex" data-tex="herringbone-lg" data-seed="12"></div></div></div>
       <div class="about__badge">
         <strong>10+</strong>
         <span>godina<br>s parketom</span>
       </div>
     </div>
 
-    <div class="about__content reveal">
+    <div class="about__content reveal" data-stagger="1">
       <p class="eyebrow">O nama</p>
       <h2>Obrtnička preciznost, moderna tehnologija</h2>
       <p>
-        <strong>Parket Art</strong> je obiteljski obrt iz Sesveta koji vodi <strong>Marko Bićanić</strong>.
-        Obrt je registriran 2019. godine, a iza nas je više od deset godina iskustva u podopolagačkim radovima
-        – od malih stanova do poslovnih i industrijskih prostora diljem Zagreba i Zagrebačke županije.
+        <strong>Parket Art</strong> je obrt iz Sesveta koji vodi <strong>Marko Bićanić</strong>.
+        Obrt je registriran 2019. godine, a iza nas je više od deset godina iskustva u podopolagačkim radovima,
+        od malih stanova do poslovnih i industrijskih prostora diljem Zagreba i Zagrebačke županije.
       </p>
       <p>
-        Vjerujemo da je dobar pod temelj svakog prostora. Zato svakom projektu pristupamo osobno:
+        Dobar pod je temelj svakog prostora. Zato svakom projektu pristupamo osobno:
         savjetujemo, poštujemo dogovor i ostavljamo prostor čišćim nego što smo ga zatekli.
       </p>
 
       <div class="features">
         <div class="feature">
-          <span class="feature__icon">◆</span>
+          <span class="feature__icon"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg></span>
           <div><h3>Osobni pristup</h3><p>Vlasnik osobno nadzire svaki projekt.</p></div>
         </div>
         <div class="feature">
-          <span class="feature__icon">◆</span>
+          <span class="feature__icon"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span>
           <div><h3>Kvalitetni materijali</h3><p>Provjereni proizvođači lakova, ljepila i sustava.</p></div>
         </div>
         <div class="feature">
-          <span class="feature__icon">◆</span>
-          <div><h3>Poštujemo rokove</h3><p>Jasna ponuda i termin – bez iznenađenja.</p></div>
+          <span class="feature__icon"><svg class="i" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+          <div><h3>Poštujemo rokove</h3><p>Jasna ponuda i termin, bez iznenađenja.</p></div>
         </div>
         <div class="feature">
-          <span class="feature__icon">◆</span>
+          <span class="feature__icon"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span>
           <div><h3>Čist rad</h3><p>Zaštita prostora i čišćenje nakon radova.</p></div>
         </div>
       </div>
@@ -272,24 +342,24 @@
       <h2>Od upita do novog poda u 4 koraka</h2>
     </header>
 
-    <ol class="steps">
+    <ol class="steps" id="steps">
       <li class="step reveal">
-        <span class="step__num">01</span>
+        <span class="step__num">1</span>
         <h3>Upit</h3>
         <p>Nazovite nas ili pošaljite fotografije prostora putem WhatsAppa ili obrasca.</p>
       </li>
-      <li class="step reveal">
-        <span class="step__num">02</span>
+      <li class="step reveal" data-stagger="1">
+        <span class="step__num">2</span>
         <h3>Besplatna procjena</h3>
         <p>Dolazimo na lokaciju, mjerimo površinu i vlagu podloge te savjetujemo o materijalima.</p>
       </li>
-      <li class="step reveal">
-        <span class="step__num">03</span>
+      <li class="step reveal" data-stagger="2">
+        <span class="step__num">3</span>
         <h3>Jasna ponuda</h3>
         <p>Dobivate detaljnu pisanu ponudu i točan termin izvođenja radova.</p>
       </li>
-      <li class="step reveal">
-        <span class="step__num">04</span>
+      <li class="step reveal" data-stagger="3">
+        <span class="step__num">4</span>
         <h3>Izvedba i predaja</h3>
         <p>Radove izvodimo uredno i u roku, a prostor predajemo očišćen i spreman za život.</p>
       </li>
@@ -306,47 +376,51 @@
       <p>Izbor radova iz Zagreba i okolice.</p>
     </header>
 
-    <div class="filters reveal" role="tablist" aria-label="Filtriraj galeriju">
-      <button class="filter is-active" data-filter="all">Svi radovi</button>
-      <button class="filter" data-filter="parket">Parket</button>
-      <button class="filter" data-filter="obnova">Brušenje i lakiranje</button>
-      <button class="filter" data-filter="mikrocement">Mikrocement</button>
-      <button class="filter" data-filter="epoksid">Epoksid</button>
-      <button class="filter" data-filter="vinil">LVT vinil</button>
+    <div class="filters reveal" role="group" aria-label="Filtriraj galeriju">
+      <button class="filter is-active" data-filter="all" aria-pressed="true">Svi radovi</button>
+      <button class="filter" data-filter="parket" aria-pressed="false">Parket</button>
+      <button class="filter" data-filter="obnova" aria-pressed="false">Obnova</button>
+      <button class="filter" data-filter="mikrocement" aria-pressed="false">Mikrocement</button>
+      <button class="filter" data-filter="epoksid" aria-pressed="false">Epoksid</button>
+      <button class="filter" data-filter="vinil" aria-pressed="false">LVT vinil</button>
     </div>
 
     <!--
-      FOTOGRAFIJE: stavite svoje slike u mapu /img i upišite naziv u data-img.
-      Npr. data-img="img/parket-1.jpg". Dok slike ne postoje, prikazuje se dekorativni uzorak.
+      FOTOGRAFIJE: stavite svoje slike u mapu /img pod nazivom iz data-img.
+      Dok slike ne postoje, prikazuje se generirana tekstura materijala.
     -->
-    <div class="gallery">
-      <figure class="gallery__item gallery__item--tall" data-cat="parket" data-img="img/parket-1.jpg">
-        <div class="gallery__media pattern-herringbone"></div>
-        <figcaption><span>Parket</span>Riblja kost, hrast – stan, Zagreb</figcaption>
+    <div class="gallery" id="gallery">
+      <figure class="gallery__item gallery__item--tall reveal" data-cat="parket" data-img="img/parket-1.jpg">
+        <div class="tex" data-tex="herringbone" data-seed="31"></div>
+        <figcaption><span>Parket</span>Riblja kost, hrast</figcaption>
       </figure>
-      <figure class="gallery__item" data-cat="mikrocement" data-img="img/mikrocement-1.jpg">
-        <div class="gallery__media pattern-microcement"></div>
+      <figure class="gallery__item reveal" data-stagger="1" data-cat="mikrocement" data-img="img/mikrocement-1.jpg">
+        <div class="tex" data-tex="microcement" data-seed="14"></div>
         <figcaption><span>Mikrocement</span>Kupaonica bez fuga</figcaption>
       </figure>
-      <figure class="gallery__item" data-cat="obnova" data-img="img/obnova-1.jpg">
-        <div class="gallery__media pattern-planks"></div>
-        <figcaption><span>Obnova</span>Brušenje i lakiranje starog parketa</figcaption>
+      <figure class="gallery__item gallery__item--wide reveal" data-stagger="2" data-cat="epoksid" data-img="img/epoksid-1.jpg">
+        <div class="tex" data-tex="epoxy" data-seed="17"></div>
+        <figcaption><span>Epoksid</span>Garaža, dekorativni flakes</figcaption>
       </figure>
-      <figure class="gallery__item gallery__item--wide" data-cat="epoksid" data-img="img/epoksid-1.jpg">
-        <div class="gallery__media pattern-epoxy"></div>
-        <figcaption><span>Epoksid</span>Garaža – poliuretanski premaz</figcaption>
+      <figure class="gallery__item gallery__item--wide reveal" data-cat="obnova" data-img="img/obnova-1.jpg">
+        <div class="tex" data-tex="after-planks" data-seed="22"></div>
+        <figcaption><span>Obnova</span>Brušenje i lakiranje brodskog poda</figcaption>
       </figure>
-      <figure class="gallery__item" data-cat="vinil" data-img="img/vinil-1.jpg">
-        <div class="gallery__media pattern-vinyl"></div>
+      <figure class="gallery__item reveal" data-stagger="1" data-cat="vinil" data-img="img/vinil-1.jpg">
+        <div class="tex" data-tex="vinyl" data-seed="25"></div>
         <figcaption><span>LVT vinil</span>Kuhinja i dnevni boravak</figcaption>
       </figure>
-      <figure class="gallery__item" data-cat="parket" data-img="img/parket-2.jpg">
-        <div class="gallery__media pattern-chevron"></div>
+      <figure class="gallery__item reveal" data-cat="parket" data-img="img/parket-2.jpg">
+        <div class="tex" data-tex="chevron" data-seed="27"></div>
         <figcaption><span>Parket</span>Francuska riblja kost</figcaption>
       </figure>
-      <figure class="gallery__item" data-cat="mikrocement" data-img="img/mikrocement-2.jpg">
-        <div class="gallery__media pattern-microcement pattern-microcement--warm"></div>
+      <figure class="gallery__item reveal" data-stagger="1" data-cat="mikrocement" data-img="img/mikrocement-2.jpg">
+        <div class="tex" data-tex="microcement-warm" data-seed="29"></div>
         <figcaption><span>Mikrocement</span>Stepenice i dnevni boravak</figcaption>
+      </figure>
+      <figure class="gallery__item gallery__item--wide reveal" data-stagger="2" data-cat="parket" data-img="img/parket-3.jpg">
+        <div class="tex" data-tex="planks" data-seed="33"></div>
+        <figcaption><span>Parket</span>Brodski pod, hrast</figcaption>
       </figure>
     </div>
   </div>
@@ -357,11 +431,11 @@
   <div class="container cta-band__inner reveal">
     <div>
       <h2>Spremni za novi pod?</h2>
-      <p>Pošaljite nam fotografije prostora i okvirnu kvadraturu – javljamo se s procjenom.</p>
+      <p>Pošaljite nam fotografije prostora i okvirnu kvadraturu, a mi vam javljamo procjenu.</p>
     </div>
     <div class="cta-band__actions">
-      <a href="tel:+385000000000" class="btn btn--dark btn--lg" data-phone>Nazovite odmah</a>
-      <a href="#kontakt" class="btn btn--outline-dark btn--lg">Pošaljite upit</a>
+      <a href="tel:+385000000000" class="btn btn--dark btn--lg btn--magnetic" data-phone><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg> Nazovite odmah</a>
+      <a href="#kontakt" class="btn btn--outline-dark btn--lg btn--magnetic">Pošaljite upit</a>
     </div>
   </div>
 </section>
@@ -372,31 +446,31 @@
     <header class="section__head section__head--left reveal">
       <p class="eyebrow">Česta pitanja</p>
       <h2>Odgovori prije nego pitate</h2>
-      <p>Imate drugo pitanje? <a href="#kontakt">Javite nam se</a> – rado ćemo pomoći.</p>
+      <p>Imate drugo pitanje? <a href="#kontakt">Javite nam se</a>, rado ćemo pomoći.</p>
     </header>
 
-    <div class="faq reveal">
-      <details>
+    <div class="faq reveal" data-stagger="1">
+      <details name="faq" open>
         <summary>Je li procjena stvarno besplatna?</summary>
         <p>Da. Na području Zagreba i Zagrebačke županije izlazak na teren, mjerenje i savjetovanje su besplatni i ne obvezuju vas ni na što.</p>
       </details>
-      <details>
+      <details name="faq">
         <summary>Koliko traje brušenje i lakiranje parketa?</summary>
         <p>Za prosječan stan od 60–80 m² radovi obično traju 2–4 dana, ovisno o stanju parketa i odabranoj završnoj obradi. Po parketu se može hodati već nakon 24 sata.</p>
       </details>
-      <details>
+      <details name="faq">
         <summary>Pravi li brušenje puno prašine?</summary>
         <p>Koristimo profesionalne strojeve s usisnim sustavima, tako da je prašina svedena na minimum. Namještaj i ostale površine dodatno štitimo.</p>
       </details>
-      <details>
+      <details name="faq">
         <summary>Može li se mikrocement nanijeti preko postojećih pločica?</summary>
-        <p>U većini slučajeva da. Mikrocement se nanosi u tankim slojevima pa nije potrebno skidati pločice, što štedi vrijeme i novac. Stanje podloge provjerimo na procjeni.</p>
+        <p>U većini slučajeva da. Mikrocement se nanosi u slojevima od 2–3 mm pa nije potrebno skidati pločice, što štedi vrijeme i novac. Stanje podloge provjerimo na procjeni.</p>
       </details>
-      <details>
+      <details name="faq">
         <summary>Je li LVT vinil pogodan za kupaonicu i podno grijanje?</summary>
         <p>Da. LVT vinil je vodootporan i kompatibilan s podnim grijanjem, pa je odličan izbor za kuhinje, kupaonice i apartmane.</p>
       </details>
-      <details>
+      <details name="faq">
         <summary>Dajete li garanciju na radove?</summary>
         <p>Da, na sve izvedene radove dajemo garanciju, a za materijale vrijedi jamstvo proizvođača. Detalje navodimo u ponudi.</p>
       </details>
@@ -414,19 +488,19 @@
 
       <ul class="contact__list">
         <li>
-          <span class="icon-circle">☎</span>
+          <span class="icon-circle"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span>
           <div><small>Telefon</small><a href="tel:+385000000000" data-phone><span data-phone-text>+385 XX XXX XXXX</span></a></div>
         </li>
         <li>
-          <span class="icon-circle">✉</span>
+          <span class="icon-circle"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span>
           <div><small>E-mail</small><a href="mailto:info@parket-art.hr" data-email><span data-email-text>info@parket-art.hr</span></a></div>
         </li>
         <li>
-          <span class="icon-circle">⌖</span>
+          <span class="icon-circle"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span>
           <div><small>Sjedište</small><span>Sesvete, Zagreb</span></div>
         </li>
         <li>
-          <span class="icon-circle">◷</span>
+          <span class="icon-circle"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg></span>
           <div><small>Radno vrijeme</small><span>Pon – Pet: 07:00 – 17:00<br>Sub: 08:00 – 13:00</span></div>
         </li>
       </ul>
@@ -437,26 +511,31 @@
       </div>
     </div>
 
-    <form class="form reveal" id="contact-form" novalidate>
+    <form class="form reveal" data-stagger="1" id="contact-form" novalidate>
       <div class="form__row">
-        <label>Ime i prezime*
-          <input type="text" name="ime" required autocomplete="name" placeholder="Ivan Horvat">
-        </label>
-        <label>Telefon*
-          <input type="tel" name="telefon" required autocomplete="tel" placeholder="091 234 5678">
-        </label>
+        <div class="field">
+          <label for="f-ime">Ime i prezime*</label>
+          <input id="f-ime" type="text" name="ime" required autocomplete="name" placeholder="Ivan Horvat">
+        </div>
+        <div class="field">
+          <label for="f-tel">Telefon*</label>
+          <input id="f-tel" type="tel" name="telefon" required autocomplete="tel" placeholder="091 234 5678">
+        </div>
       </div>
       <div class="form__row">
-        <label>E-mail
-          <input type="email" name="email" autocomplete="email" placeholder="ivan@email.com">
-        </label>
-        <label>Mjesto
-          <input type="text" name="mjesto" placeholder="npr. Zagreb, Dubrava">
-        </label>
+        <div class="field">
+          <label for="f-email">E-mail</label>
+          <input id="f-email" type="email" name="email" autocomplete="email" placeholder="ivan@email.com">
+        </div>
+        <div class="field">
+          <label for="f-mjesto">Mjesto</label>
+          <input id="f-mjesto" type="text" name="mjesto" placeholder="npr. Zagreb, Dubrava">
+        </div>
       </div>
       <div class="form__row">
-        <label>Usluga
-          <select name="usluga">
+        <div class="field">
+          <label for="f-usluga">Usluga</label>
+          <select id="f-usluga" name="usluga">
             <option>Postavljanje parketa</option>
             <option>Brušenje i lakiranje</option>
             <option>Mikrocement</option>
@@ -464,20 +543,29 @@
             <option>LVT vinil</option>
             <option>Nisam siguran/na – trebam savjet</option>
           </select>
-        </label>
-        <label>Okvirna površina (m²)
-          <input type="number" name="povrsina" min="1" placeholder="npr. 65">
-        </label>
+        </div>
+        <div class="field">
+          <label for="f-povrsina">Okvirna površina (m²)</label>
+          <input id="f-povrsina" type="number" name="povrsina" min="1" inputmode="numeric" placeholder="npr. 65">
+        </div>
       </div>
-      <label>Poruka
-        <textarea name="poruka" rows="4" placeholder="Opišite prostor, trenutno stanje poda i željeni termin..."></textarea>
-      </label>
-      <label class="form__check">
-        <input type="checkbox" name="privola" required>
+      <div class="field">
+        <label for="f-poruka">Poruka</label>
+        <textarea id="f-poruka" name="poruka" rows="4" placeholder="Opišite prostor, trenutno stanje poda i željeni termin..."></textarea>
+      </div>
+      <label class="form__check" for="f-privola">
+        <input id="f-privola" type="checkbox" name="privola" required>
         <span>Pristajem da me Parket Art kontaktira vezano uz moj upit.*</span>
       </label>
-      <button type="submit" class="btn btn--gold btn--lg btn--block">Pošalji upit</button>
+      <button type="submit" class="btn btn--gold btn--lg btn--block">Pošalji upit <svg class="i i--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
       <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+
+      <div class="form__done" id="form-done" hidden>
+        <svg class="form__done-icon" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="m15 27 7 7 15-15"/></svg>
+        <h3>Upit je pripremljen</h3>
+        <p id="form-done-text">Otvorili smo vaš e-mail program s ispunjenim upitom. Pošaljite ga i javit ćemo vam se u roku od 24 sata.</p>
+        <button type="button" class="btn btn--outline-dark" id="form-again">Novi upit</button>
+      </div>
     </form>
   </div>
 </section>
@@ -488,7 +576,7 @@
 <footer class="footer">
   <div class="container footer__inner">
     <div>
-      <a href="#pocetna" class="logo logo--light">
+      <a href="#pocetna" class="logo">
         <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M6 25 20 11l14 14-4.5 4.5L20 20l-9.5 9.5z"/></svg></span>
         <span class="logo__text">PARKET<strong>ART</strong></span>
       </a>
@@ -497,7 +585,7 @@
     <nav class="footer__nav" aria-label="Podnožje">
       <h4>Usluge</h4>
       <a href="#usluge">Postavljanje parketa</a>
-      <a href="#usluge">Brušenje i lakiranje</a>
+      <a href="#obnova">Brušenje i lakiranje</a>
       <a href="#usluge">Mikrocement</a>
       <a href="#usluge">Epoksidni podovi</a>
       <a href="#usluge">LVT vinil</a>
@@ -509,19 +597,19 @@
       <span>Sesvete, Zagreb</span>
     </div>
   </div>
+  <div class="footer__mark" aria-hidden="true">Parket Art</div>
   <div class="container footer__bottom">
-    <p>© <span id="year"></span> PARKET ART, vl. Marko Bićanić. Sva prava pridržana.</p>
+    <p>© <span id="year">2026</span> PARKET ART, vl. Marko Bićanić. Sva prava pridržana.</p>
     <p><a href="#pocetna">Natrag na vrh ↑</a></p>
   </div>
 </footer>
 
 <!-- Plutajući gumbi -->
 <a href="#" class="float-wa" data-whatsapp target="_blank" rel="noopener" aria-label="Pišite nam na WhatsApp">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>
+  <svg class="i" aria-hidden="true"><use href="#i-wa"/></svg>
 </a>
 <a href="tel:+385000000000" class="float-call" data-phone aria-label="Nazovite nas">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>
-  Nazovite
+  <svg class="i" aria-hidden="true"><use href="#i-phone"/></svg> Nazovite
 </a>
 
 <!-- Lightbox -->

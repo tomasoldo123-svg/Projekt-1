@@ -40,3 +40,13 @@ python3 -m http.server 8000
 
 Stranica je čisti HTML/CSS/JS – može se postaviti na bilo koji hosting
 (npr. postojeći hosting za parket-art.hr, Netlify, GitHub Pages).
+
+## Animacije
+
+- **Hero**: parket (riblja kost) se pri učitavanju slaže dasku po dasku (canvas), uz svjetlo koje prati miš.
+  Ako dodate `img/hero.jpg`, umjesto animacije prikazuje se fotografija.
+- **Prije / poslije**: klizač u sekciji "Obnova". Prave fotografije: `img/prije.jpg` i `img/poslije.jpg`
+  (iste dimenzije i kadar).
+- Teksture materijala (parket, mikrocement, epoksid, vinil) generiraju se u pregledniku dok nema fotografija.
+- Otkrivanje sekcija vezano je uz skrol (CSS scroll-driven animations, s rezervom za starije preglednike).
+- Sve animacije poštuju postavku sustava "smanji pokrete" (prefers-reduced-motion).
