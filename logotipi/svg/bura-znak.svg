@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300"><g transform="translate(262 150) rotate(-24)">
+  <mask id="bzm" maskUnits="userSpaceOnUse" x="-120" y="-90" width="240" height="180">
+    <rect x="-120" y="-90" width="240" height="180" fill="#fff"/><path d="M-92,0 C-34,-58 34,34 92,0 C34,52 -34,-38 -92,0 Z" fill="#000"/></mask>
+  <ellipse rx="100" ry="72" fill="#2437E0" mask="url(#bzm)"/>
+  <path d="M-169.2,-44 H-105.2 M-234.0,0 H-126.0 M-151.2,44 H-105.2" fill="none" stroke="#2437E0" stroke-width="15" stroke-linecap="round"/>
+</g></svg>

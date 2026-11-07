@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512"><rect width="512" height="512" rx="116" fill="#0A0B1E"/><g transform="translate(20.0 -10.680000000000007) scale(1.18)"><g>
+  <defs>
+    <linearGradient id="sig" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7B5CFF"/><stop offset="1" stop-color="#2F6BFF"/>
+    </linearGradient>
+    <radialGradient id="sip" cx=".35" cy=".35" r=".8">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#5CF0FF"/>
+      <stop offset="1" stop-color="#3BA8FF"/>
+    </radialGradient>
+  </defs>
+  <path d="M74,96 C96,112 118,126 140,134 Q200,150 260,134 C282,126 304,112 326,96 C334,140 336,180 336,214 C336,300 276,356 200,356 C124,356 64,300 64,214 C64,180 66,140 74,96 Z" fill="url(#sig)"/>
+  <circle cx="142" cy="220" r="58" fill="#EEF0FF"/><circle cx="142" cy="220" r="44" fill="#0A0B1E"/><circle cx="151" cy="210" r="18" fill="url(#sip)"/><circle cx="258" cy="220" r="58" fill="#EEF0FF"/><circle cx="258" cy="220" r="44" fill="#0A0B1E"/><circle cx="267" cy="210" r="18" fill="url(#sip)"/>
+  <path d="M200,262 L216,280 L200,312 L184,280 Z" fill="#FFB547"/>
+</g></g></svg>
