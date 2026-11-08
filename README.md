@@ -4,6 +4,7 @@
 |---|---|
 | [`/`](./index.html) | Parket Art – parket, brušenje, mikrocement (Zagreb) |
 | [`/ademovic/`](./ademovic/) | Stomatološka ordinacija Ademović – Čengić Vila, Sarajevo ([upute](./ademovic/README.md)) |
+| [`/kubica/`](./kubica/) | Dental Centar Kubica – Marulićeva 3, Pula ([upute](./kubica/README.md)) |
 
 ---
 
