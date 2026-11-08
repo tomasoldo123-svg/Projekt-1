@@ -1,3 +1,12 @@
+# Projekti
+
+| Mapa | Klijent |
+|---|---|
+| [`/`](./index.html) | Parket Art – parket, brušenje, mikrocement (Zagreb) |
+| [`/ademovic/`](./ademovic/) | Stomatološka ordinacija Ademović – Čengić Vila, Sarajevo ([upute](./ademovic/README.md)) |
+
+---
+
 # Parket Art – web stranica
 
 Statična, responzivna web stranica za **PARKET ART, vl. Marko Bićanić** (Sesvete, Zagreb):
