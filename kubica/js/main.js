@@ -17,7 +17,7 @@
     // Endpoint za izravno slanje upita (npr. Formspree, Web3Forms ili vlastiti poslužitelj koji
     // prosljeđuje poruku na mobitel). Ako je prazno, upit se šalje e-mailom/WhatsAppom.
     formEndpoint: '',
-    // Fotografije doktora (format 16:11), npr. { karlo: 'img/karlo.jpg', elena: 'img/elena.jpg' }
+    // Fotografije doktora (portret 3:4, prikazuju se u obliku luka), npr. { karlo: 'img/karlo.jpg', elena: 'img/elena.jpg' }
     photos: { karlo: '', elena: '' },
     mapsEmbed: 'https://www.google.com/maps?q=Maruli%C4%87eva+ulica+3,+52100+Pula&output=embed',
     mapsDir: 'https://www.google.com/maps/dir/?api=1&destination=Maruli%C4%87eva+ulica+3%2C+52100+Pula',
@@ -58,6 +58,7 @@
     initSplit();
     initReveal();
     initCompare();
+    initStatement();
     initServices();
     initProsth();
     initGuide();
@@ -494,6 +495,48 @@
   }
 
   /* ------------------------------------------------------------------
+     PRISTUP — riječi se "pale" dok rečenica prolazi ekranom
+     ------------------------------------------------------------------ */
+  function initStatement() {
+    const el = $('[data-fill]');
+    if (!el) return;
+    const words = [];
+    const walk = (n) => {
+      Array.from(n.childNodes).forEach((c) => {
+        if (c.nodeType === 3) {
+          const frag = document.createDocumentFragment();
+          c.textContent.split(/(\s+)/).forEach((part) => {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+            const w = document.createElement('span');
+            w.className = 'fw';
+            w.textContent = part;
+            words.push(w);
+            frag.appendChild(w);
+          });
+          c.replaceWith(frag);
+        } else if (c.nodeType === 1) walk(c);
+      });
+    };
+    walk(el);
+    if (reduceMotion) { document.documentElement.classList.add('no-fill'); return; }
+    let lit = -1, ticking = false;
+    const update = () => {
+      ticking = false;
+      const r = el.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const p = clamp((vh * .82 - r.top) / (r.height + vh * .35), 0, 1);
+      const n = Math.round(p * words.length);
+      if (n === lit) return;
+      lit = n;
+      words.forEach((w, i) => w.classList.toggle('is-lit', i < n));
+    };
+    window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
+  /* ------------------------------------------------------------------
      USLUGE — harmonika
      ------------------------------------------------------------------ */
   function openService(li, { scroll = false, flash = false } = {}) {
@@ -525,6 +568,11 @@
       const li = document.getElementById(a.getAttribute('href').slice(1));
       if (!li) return;
       e.preventDefault();
+      if (li.classList.contains('svc-card')) {
+        li.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+        li.classList.remove('is-flash'); void li.offsetWidth; li.classList.add('is-flash');
+        return;
+      }
       openService(li, { scroll: true, flash: true });
     });
   }
